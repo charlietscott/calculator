@@ -1,18 +1,17 @@
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    return a / b
+
+
 def main():
-
-    def add(a, b):
-        return a + b
-    
-    def subtract(a, b):
-        return a - b
-
-    def multiply(a, b):
-        return a * b
-    
-    def divide(a, b):
-        return a / b
-
-
     while True:
         a = float(input("First number: "))
         op = input("Operator (+ - * /): ")
@@ -27,5 +26,7 @@ def main():
             print("Result:", divide(a, b))
         else:
             print("Unknown operator:", op)
+
+
 if __name__ == "__main__":
     main()
